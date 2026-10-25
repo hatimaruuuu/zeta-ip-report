@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Zetaの日本IP利用とAI学習について、公開資料・直接観測・未確認事項を区別した調査レポート。">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<title>Zeta公開URLの検証表 | Zeta公開情報調査</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ</a>
+<header class="site-header"><div class="header-inner"><div class="brand"><span class="brand-mark" aria-hidden="true">Z</span><span>Zeta公開情報調査</span></div><nav class="top-nav" aria-label="ページ"><a href="./">本文</a><a aria-current="page" href="verification.html">公開URL検証表</a></nav></div></header>
+<div class="page-shell">
+<aside class="sidebar" aria-label="目次"><div class="sidebar-inner"><p class="sidebar-label">目次</p><nav><a href="#section-1">方法と対照</a>
+<a href="#section-2">別の日本IPを含む現行ページの確認</a>
+<a href="#section-3">この表で分かること・分からないこと</a></nav><a class="back-top" href="#title">先頭へ戻る ↑</a></div></aside>
+<main id="main"><div class="eyebrow">公開情報の検証 <span aria-hidden="true">/</span> 2026年10月25日</div><p class="page-kind">検証表</p><details class="mobile-toc"><summary>目次を開く</summary><nav><a href="#section-1">方法と対照</a>
+<a href="#section-2">別の日本IPを含む現行ページの確認</a>
+<a href="#section-3">この表で分かること・分からないこと</a></nav></details><article class="report-body"><h1 id="title">Zeta公開URLの検証表（2026年10月25日）</h1>
+<p>本表は、公開レポートの「候補19件のプロフィールが404」という観測を読者が追試できるようにする付録である。対象の本文、画像、会話、投稿者名は掲載しない。URLはすべて公開検索索引から得た候補で、各ページの権利状態や削除理由を確定するものではない。</p>
+<h2 id="section-1">方法と対照</h2>
+<ul>
+<li>観測時刻: 2026年10月25日12:07および12:32–12:34 JST。</li>
+<li>方法: <code>/ja/plots/{id}/profile</code> へ認証なしの通常GETを低頻度で実施。最終HTTP状態コードを記録。</li>
+<li>検索による候補抽出: <code>site:zeta-ai.io/ja/plots/</code> に「にじさんじ」「ニジサンジ」「ANYCOLOR」「2434」および主要ライバー名を組み合わせた便宜抽出。検索エンジンの順位・索引は変動する。</li>
+<li>関連性の再現: 10月25日12:48–12:50 JSTの敵対再検証で、19件中6件について第三者検索索引の関連語と検索条件を記録した。初回に8件と数えたうち2件は再現できず、公開認定から外した。残り13件の関連性は独立再現未了。</li>
+<li>陽性対照: <code>93dbe38f-a8b9-4766-b73a-71de2e41899c</code> の同形式プロフィールはHTTP 200。全プロフィールが一律404という状態ではない。</li>
+<li>陰性対照: 存在しない固定UUID <code>00000000-0000-4000-8000-000000000000</code> のプロフィールは404、コメントルートは200。コメント200はプロット実在・内容残存の判定には使えない。</li>
+</ul>
+<p>URLの組み立て方: <code>https://zeta-ai.io/ja/plots/{下表のID}/profile</code>。検索語との結び付きの欄の「未再現」は、当該候補が無関係だと証明するものではない。</p>
+<table>
+<thead>
+<tr>
+<th align="right">No.</th>
+<th>プロットID</th>
+<th align="right">10/25プロフィール</th>
+<th>過去索引の関連語を再現</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td><code>955ec74e-34b8-4a0b-bbb5-ba3ba84ab6de</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td><code>1502b35d-7045-4d12-93b7-6175c0200de9</code></td>
+<td align="right">404</td>
+<td>はい</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td><code>7a6de1a0-339d-404d-9884-e477f5cd8cb4</code></td>
+<td align="right">404</td>
+<td>はい</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td><code>531b8f85-66fe-4f8d-9846-c47457952b50</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td><code>19c80506-e167-460a-ba9f-436eeb23a6ae</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td><code>e4b3b1e3-440d-4ad7-a27a-089e4601898d</code></td>
+<td align="right">404</td>
+<td>はい</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td><code>70c196c5-3963-4fc6-8eba-c8e9f2ba6b65</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td><code>99e74abc-1a8e-48e6-987f-56b55195c18a</code></td>
+<td align="right">404</td>
+<td>はい</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td><code>3624d9b5-1537-483c-b387-e195f1dfea02</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td><code>af5642fa-42ed-4a4f-9a03-63add88fa80d</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td><code>c42bd033-e4bf-4a51-8b3b-c0d4d9e04a71</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td><code>1b8d7215-7b75-4744-8692-fdc8aea4e980</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td><code>e8e77970-d146-49cb-98eb-9327a3dc8e3e</code></td>
+<td align="right">404</td>
+<td>はい</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td><code>10836dc6-aecc-4b88-bb17-94e009fb730f</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td><code>11c9ea8a-6f2a-4cdb-91d7-0d29e12eb6e7</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td><code>ab9ec179-7bcf-4915-b550-720a638903f9</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td><code>df28ded7-fb07-4d81-94a9-86cb0fe1202f</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td><code>a6f7a675-2053-41c7-a28f-e0a40151fb40</code></td>
+<td align="right">404</td>
+<td>はい</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td><code>b9e0d4fc-5bbd-4b56-9638-b4ff0092ceb6</code></td>
+<td align="right">404</td>
+<td>未再現</td>
+</tr>
+</tbody></table>
+<h3 id="subsection-1">関連語を再現した6件の検索条件</h3>
+<p>以下は10月25日12:48–12:50 JSTの検索条件と、検索索引に表示された最小限の関連語である。検索索引は後日変動し得るため、現在のページ内容の証拠ではない。検索結果の全文や投稿者名は転載しない。</p>
+<table>
+<thead>
+<tr>
+<th align="right">No.</th>
+<th>再確認した検索条件</th>
+<th>索引上の関連語</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">2</td>
+<td><code>site:zeta-ai.io/ja/plots/ &quot;にじ面&quot; ANYCOLOR</code></td>
+<td><code>ANYCOLOR</code>／<code>にじさんじ</code></td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td><code>site:zeta-ai.io/ja/plots/ &quot;5年ぶりのおかえり。&quot;</code></td>
+<td><code>にじさんじ</code></td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td><a href="https://search.yahoo.co.jp/search?p=https%3A%2F%2Fzeta-ai.io%2Fja%2Fplots%2Fe4b3b1e3-440d-4ad7-a27a-089e4601898d%2Fprofile">Yahooの対象URL検索</a></td>
+<td><code>にじさんじ</code>／<code>葛葉</code></td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>対象の完全なプロフィールURLを引用符付きで検索</td>
+<td><code>にじさんじ</code></td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>対象の完全なプロフィールURLを引用符付きで検索</td>
+<td><code>#ニジサンジ</code></td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>対象の完全なプロフィールURLを引用符付きで検索</td>
+<td><code>2434</code>／<code>にじさんじ</code></td>
+</tr>
+</tbody></table>
+<h2 id="section-2">別の日本IPを含む現行ページの確認</h2>
+<p><a href="https://zeta-ai.io/ko/announcements/5578">Zetaの2025年Daewon Media関連告知</a>が対象表に載せた作品名から、『ONE PIECE』『ちいかわ』『ドラえもん』を韓国語Zetaの公開検索索引で探した。2026年10月25日12:37–12:40 JST、便宜抽出した9プロフィールURLを通常GETで各1回確認した。URL形式は <code>https://zeta-ai.io/ko/plots/{下表のID}/profile</code>。200の7件は公開HTMLに作品名とキャラクター名が表示された。本文・画像・投稿者名は転載しない。</p>
+<table>
+<thead>
+<tr>
+<th>作品系統</th>
+<th>プロットID</th>
+<th align="right">HTTP</th>
+<th>画面上の公開日／更新日</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ちいかわ</td>
+<td><code>a3617b96-13e7-4a51-beec-fb35dad509ee</code></td>
+<td align="right">404</td>
+<td>—</td>
+</tr>
+<tr>
+<td>ちいかわ／銀魂</td>
+<td><code>907f55bb-de22-4fb9-9b22-91949b303c78</code></td>
+<td align="right">404</td>
+<td>—</td>
+</tr>
+<tr>
+<td>ちいかわ</td>
+<td><code>aa616ee5-2427-4690-be08-0ebcb115ab66</code></td>
+<td align="right">200</td>
+<td>2026-10-05／10-08</td>
+</tr>
+<tr>
+<td>ONE PIECE</td>
+<td><code>649b355e-34eb-488f-8051-484ef3650b2c</code></td>
+<td align="right">200</td>
+<td>2026-09-12／10-20</td>
+</tr>
+<tr>
+<td>ONE PIECE</td>
+<td><code>1891697f-c230-42f0-9e51-f59929106f5c</code></td>
+<td align="right">200</td>
+<td>2026-08-16／10-08</td>
+</tr>
+<tr>
+<td>ONE PIECE</td>
+<td><code>52d8febf-82ba-4822-9e91-a6092f2821e1</code></td>
+<td align="right">200</td>
+<td>2026-09-12／10-03</td>
+</tr>
+<tr>
+<td>ドラえもん</td>
+<td><code>dcde79c5-befb-478b-9c95-9a504587dcf3</code></td>
+<td align="right">200</td>
+<td>2026-10-01／10-15</td>
+</tr>
+<tr>
+<td>ドラえもん</td>
+<td><code>44e4076f-9e0e-43f0-ab2c-db772b77461a</code></td>
+<td align="right">200</td>
+<td>2026-09-28／10-23</td>
+</tr>
+<tr>
+<td>ドラえもん</td>
+<td><code>c0041675-6a76-427c-ac6b-05a097e28e30</code></td>
+<td align="right">200</td>
+<td>2026-10-06／10-08</td>
+</tr>
+</tbody></table>
+<p>この9件は便宜標本であり、全件数や削除率を示さない。Daewon告知には個別IDがなく、この7件が権利者から削除指定されたか、個別許諾がないか、法的侵害に該当するかは未確認である。現在の公開状態は、画像・文章の取得元、保存国、AI学習への投入先も示さない。</p>
+<h2 id="section-3">この表で分かること・分からないこと</h2>
+<p>直接確認できたのは<strong>選定した19 URLのプロフィールが観測時点で取得不能</strong>という事実である。検索条件を記録した6件の過去索引は、そのうち一部が以前「にじさんじ」等に関連する語で検索可能だったことを補強する。ただし、検索スニペットは過去の索引であり、現在の公開状態を示さない。19件は母集団から無作為に選んだ標本ではないため、全対象の件数や削除率は算出できない。404は内部データ、バックアップ、学習データ、モデル重みの除去を証明しない。</p>
+<p>コメントルートが200でも、存在しないIDで同じ挙動を観測したため、<strong>対象固有の削除漏れ</strong>という以前の解釈は撤回した。これは汎用ルートのsoft-404として扱う。</p>
+<p>解析担当: hqyabussqqqaaaaQqa@!1</p>
+</article><footer class="site-footer"><p>2026年10月25日時点の公開情報に基づく調査です。観測と推定、未確認事項を本文に明示しています。</p><nav aria-label="ページ末尾"><a href="./">本文</a><a aria-current="page" href="verification.html">公開URL検証表</a></nav></footer></main>
+</div>
+</body>
+</html>

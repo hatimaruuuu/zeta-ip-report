@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Zetaの日本IP利用とAI学習について、公開資料・直接観測・未確認事項を区別した調査レポート。">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<title>Zetaの日本IP利用とAI学習――公開情報の検証 | Zeta公開情報調査</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ</a>
+<header class="site-header"><div class="header-inner"><div class="brand"><span class="brand-mark" aria-hidden="true">Z</span><span>Zeta公開情報調査</span></div><nav class="top-nav" aria-label="ページ"><a aria-current="page" href="./">本文</a><a href="verification.html">公開URL検証表</a></nav></div></header>
+<div class="page-shell">
+<aside class="sidebar" aria-label="目次"><div class="sidebar-inner"><p class="sidebar-label">目次</p><nav><a href="#section-1">0. 30秒でわかる結論</a>
+<a href="#section-2">1. 結論</a>
+<a href="#section-3">2. ANYCOLOR／にじさんじ案件で確認できたこと</a>
+<a href="#section-4">3. 何のAIを使っているか</a>
+<a href="#section-5">4. 何を学習しているか</a>
+<a href="#section-6">5. データをどこで処理・保存するか</a>
+<a href="#section-7">6. 単発ではない権利者対応</a>
+<a href="#section-8">7. 過去のデータ保護上の記録</a>
+<a href="#section-9">8. 日本のクリエイター・IP権利者にとっての法的意味</a>
+<a href="#section-10">9. 現時点で断定してはいけないこと</a>
+<a href="#section-11">10. 権利者・政策担当者が要求すべき証拠</a>
+<a href="#section-12">11. 敵対検証で残った7つの弱点</a>
+<a href="#section-13">12. 公開Webの低侵襲セキュリティ観測</a>
+<a href="#section-14">13. 調査方法と限界</a>
+<a href="#section-15">14. 最終評価</a>
+<a href="#section-16">15. 専門用語を普通の言葉にすると</a></nav><a class="back-top" href="#title">先頭へ戻る ↑</a></div></aside>
+<main id="main"><div class="eyebrow">公開情報の検証 <span aria-hidden="true">/</span> 2026年10月25日</div><p class="page-kind">調査レポート</p><details class="mobile-toc"><summary>目次を開く</summary><nav><a href="#section-1">0. 30秒でわかる結論</a>
+<a href="#section-2">1. 結論</a>
+<a href="#section-3">2. ANYCOLOR／にじさんじ案件で確認できたこと</a>
+<a href="#section-4">3. 何のAIを使っているか</a>
+<a href="#section-5">4. 何を学習しているか</a>
+<a href="#section-6">5. データをどこで処理・保存するか</a>
+<a href="#section-7">6. 単発ではない権利者対応</a>
+<a href="#section-8">7. 過去のデータ保護上の記録</a>
+<a href="#section-9">8. 日本のクリエイター・IP権利者にとっての法的意味</a>
+<a href="#section-10">9. 現時点で断定してはいけないこと</a>
+<a href="#section-11">10. 権利者・政策担当者が要求すべき証拠</a>
+<a href="#section-12">11. 敵対検証で残った7つの弱点</a>
+<a href="#section-13">12. 公開Webの低侵襲セキュリティ観測</a>
+<a href="#section-14">13. 調査方法と限界</a>
+<a href="#section-15">14. 最終評価</a>
+<a href="#section-16">15. 専門用語を普通の言葉にすると</a></nav></details><article class="report-body"><h1 id="title">Zetaの日本IP利用とAI学習――公開情報の検証</h1>
+<p>にじさんじ関連の削除要請、日本作品の公開ページ、AI学習、PixAIの運営会社を公開資料から整理</p>
+<p><strong>基準日:</strong> 2026年10月25日（JST）<br><strong>対象:</strong> 韓国Scatter Lab運営のAIストーリーサービス「Zeta」、ANYCOLOR／にじさんじ関連対応、AIモデル、学習データ、国外処理・保存、権利者対応<br><strong>用途:</strong> 一般読者、クリエイター、漫画家、IP権利者向けの事実整理<br><strong>性質:</strong> 公開一次資料、保存資料、公開クライアント観測及び補助報道に基づくOSINT。法律意見、捜査結果又は非公開データの監査ではない。</p>
+<h2 id="section-1">0. 30秒でわかる結論</h2>
+<p>Zetaは、にじさんじの名称・画像・設定を許可なく使ったプロットについて、ANYCOLORから削除要請を受けたと自社サイトで発表した。これは<strong>Zeta側の公表</strong>で、ANYCOLOR側の本件名指しの公表は、10月25日までの対象検索では確認できていない。</p>
+<p>にじさんじ以外にも、Zetaは2025年に『ONE PIECE』『ドラえもん』『ちいかわ』等を権利者対応の対象表に載せている。今日の少数の直接確認では、同じ作品名とキャラクター設定を含む<strong>新しい公開プロットが3作品系統で7件</strong>見つかった。個別の許諾・違法性・削除指定は未確認である。(<a href="https://zeta-ai.io/ko/announcements/5578">Zeta告知</a>／<a href="verification.html">直接観測の検証表</a>)</p>
+<p>Zetaは、利用者の会話や反応をAI改善に使う具体的な工程を公式技術資料で公表している。外部の学習基盤提供会社も、Spotwriteの大規模学習を顧客事例として記録した。しかし、<strong>対象のにじさんじデータが実際に学習データやモデルへ入った直接証拠はない</strong>。工程の説明、学習設備の実在、特定データの投入は別々の事実である。(<a href="https://blog.scatterlab.co.kr/tokenizer-281373">Scatter Lab技術記事</a>／<a href="https://elice.io/ko/resources/case-study/scatterlab">Elice顧客事例</a>)</p>
+<p>PixAIはMewtant／Metanomaly側が運営する別サービスで、本件への直接関与は確認されていない。両サービスの協業は続いており、10月23日に共同企画が開始したが、それはANYCOLOR案件への関与を示すものではない。</p>
+<p>Zetaの日本語ポリシーは、日本利用者の個人情報を韓国へ移転すると明記する。ただし、日本IPの特定の本文・画像が国外の保存先やAI学習へ送られたことは、公開資料ではまだ確認できない。<strong>「日本IPの公開利用」と「対象データの国外搬出・学習投入」は分けて判断する。</strong> (<a href="https://zeta-ai.io/ja/policy/privacy">Zeta日本語ポリシー</a>)</p>
+<p>システム面では、旧TLS 1.0/1.1の受理、任意Originをcredentials付きで許可するCORS、画面間messageの送受信元検証不足を確認した。一方、他人のデータ取得、認証回避又はトークン窃取は再現していない。よって、<strong>設定不備とコード上の信頼境界不備は断定できるが、「侵害成功」や「漏えい」は断定できない</strong>。</p>
+<h3 id="subsection-1">PixAIの運営会社はどこか</h3>
+<p>一社名だけで答えると不正確である。<a href="https://pixai.art/about">PixAI公式About</a>は、<strong>米国Mewtantと日本法人Metanomalyが構築・運営</strong>すると記す。<a href="https://pixai.art/legal">PixAI本体の特商法表示</a>はWeb販売事業者を <strong>Mewtant Inc.</strong> と記す。一方、<a href="https://blog.pixai.art/en/how-to-use-pixai-guide/">PixAI公式ブログの初心者ガイド</a>は運営者を <strong>シンガポールのMetanomaly Pte. Ltd.</strong> と説明する。公式資料内で「運営」の名義が一致しないため、サービス全体を単一法人へ帰属させられない。3法人の持株比率・厳密な親子関係も公開株主資料では確認できない。</p>
+<table>
+<thead>
+<tr>
+<th>確認箇所</th>
+<th>表示される法人</th>
+<th>読み方</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://pixai.art/about">PixAI公式About</a></td>
+<td>Mewtant（米国）＋日本法人Metanomaly Inc.</td>
+<td>サービス全体の構築・運営主体</td>
+</tr>
+<tr>
+<td><a href="https://pixai.art/legal">PixAI本体の特商法表示</a></td>
+<td>Mewtant Inc.</td>
+<td>PixAIサイトの販売事業者</td>
+</tr>
+<tr>
+<td><a href="https://mewtant.io/">Mewtant自社サイト</a></td>
+<td>Mewtant Inc.</td>
+<td>PixAIを自社製品として掲載</td>
+</tr>
+<tr>
+<td><a href="https://ised-isde.canada.ca/cipo/trademark-search/pdf/2292278?lang=eng">カナダ知的財産庁の商標原簿</a></td>
+<td>Mewtant Inc.</td>
+<td>PixAI商標の登録権利者。サービス全工程の運営主体までは示さない</td>
+</tr>
+<tr>
+<td><a href="https://metanomaly.co.jp/legal/law">Metanomaly会社サイトの特商法表示</a></td>
+<td>Metanomaly株式会社＋Mewtant Inc.</td>
+<td>同サイトの日本向け事業者として両社を掲載</td>
+</tr>
+<tr>
+<td><a href="https://metanomaly.co.jp/legal/payment">資金決済法表示</a></td>
+<td>Metanomaly株式会社＋Mewtant Inc.</td>
+<td>PixAIクレジットの発行者として両社を掲載</td>
+</tr>
+<tr>
+<td><a href="https://play.google.com/store/apps/details?id=io.mewtant.pixaiart">Google Play</a></td>
+<td>Mewtant Inc.</td>
+<td>Android版の開発者表示</td>
+</tr>
+<tr>
+<td>Apple App Store（10月15日の直接観測）</td>
+<td>METANOMALY PTE. LTD.</td>
+<td>iOS版の販売者・開発者表示。10月23日以降は一時的に検索・ダウンロード不能とPixAIが告知し、現在は再現不能</td>
+</tr>
+<tr>
+<td><a href="https://blog.pixai.art/en/how-to-use-pixai-guide/">PixAI公式ブログの初心者ガイド</a></td>
+<td>Metanomaly Pte. Ltd.</td>
+<td>一般的な「運営者」として記述。Aboutと表現が食い違う</td>
+</tr>
+<tr>
+<td><a href="https://metanomaly.co.jp/">Metanomaly公式会社ページ</a></td>
+<td>Mewtant Inc.（米国）、Metanomaly Pte. Ltd.（シンガポール）、Metanomaly株式会社（日本）</td>
+<td>日本法人を「Mewtantグループの日本法人」と説明し、3拠点を掲載</td>
+</tr>
+<tr>
+<td><a href="https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9011001159717">国税庁法人番号公表サイト</a></td>
+<td>Metanomaly株式会社</td>
+<td>日本法人の存在・法人番号・公表所在地を確認。株主関係は示さない</td>
+</tr>
+</tbody></table>
+<p>したがって、短く言えば <strong>「PixAIの公式表示には米国Mewtant Inc.、日本Metanomaly株式会社、シンガポールMetanomaly Pte. Ltd.が役割別に現れる」</strong> である。PixAI本体の販売事業者はMewtant Inc.、iOS配信者はシンガポール法人とされる。利用規約の準拠法が香港法であることだけを理由に「香港企業」と呼ぶのは誤りである。</p>
+<p>PixAIとZetaは別会社で、資本関係を示す一次資料は確認できない。Zetaの6月告知が述べたのは、<strong>PixAI v1.0の旧8スタイルへの対応終了</strong>で、関係全体の終了ではない。Zetaの現行ポリシーにもPixAIが委託・提供先として載り、10月23日には共同企画が開始した。一般的な画像生成委託と協業は確認できるが、ANYCOLOR対象プロットの作成・掲載・学習・削除判断へのPixAIの直接関与は確認されていない。(<a href="https://zeta-ai.io/en/announcements/11353">Zeta告知</a> / <a href="https://pixai.art/news/2070237630720406633">PixAI×Zeta企画</a>)</p>
+<h2 id="section-2">1. 結論</h2>
+<p>公開証拠で確認できる核心は、次の二点である。</p>
+<ol>
+<li><strong>Zetaは、ANYCOLORから無断使用と報告された「にじさんじ」関連プロットが存在し、無断使用対象プロット群の全面削除を求められたと自ら公表した。</strong> Zetaは事件前から第三者キャラクターの利用を禁止していたため、少なくとも申告対象群を権利者申告前に完全排除できなかった。</li>
+<li><strong>Scatter Labは、利用者の実会話ログや行動を自社ストーリーLLM「Spotwrite」の改善・学習へ使う工程を具体的に公表している。</strong> 日本語を含む実サービス会話ログをトークナイザー用コーパスへ、再生成・採用行動をDPOへ、利用者信号を報酬モデル及びGRPOオンライン学習へ使うと説明する。外部ベンダーEliceの顧客事例は大規模学習の実施を補強するが、各工程の入力データは監査していない。(<a href="https://blog.scatterlab.co.kr/tokenizer-281373">Scatter Lab技術記事</a>／<a href="https://elice.io/ko/resources/case-study/scatterlab">Elice顧客事例</a>)</li>
+</ol>
+<p>この二点を合わせると、<strong>無断IP由来のプロット、会話又は反応が学習候補へ混入し得た構造的リスク</strong>は具体的である。</p>
+<p>ただし、次の命題は未立証である。</p>
+<ul>
+<li>にじさんじ固有データがTokenizer、CPT、SFT、DPO、GRPO、報酬モデル、評価セット又はモデル重みに実際に入った。</li>
+<li>Zeta又はScatter Labの従業員が対象プロットを作成した。</li>
+<li>Zetaが対象IPを広告に自ら利用した。</li>
+<li>ANYCOLOR案件について訴訟、仮処分、損害賠償請求、刑事告訴、行政処分又は和解が存在する。</li>
+<li>公開プロットの削除が、ログ、派生学習データ、バックアップ、旧checkpoint又は学習済み重みからの除去まで完了した。</li>
+</ul>
+<p>したがって、外部説明で最も正確な一文は次のとおりである。</p>
+<blockquote>
+<p>Zetaは、ANYCOLORから無断使用と報告された対象プロットの存在と削除要請を自ら公表した。検索索引から選んだ19件のプロフィールURLは10月25日に取得不能だった。Scatter Labは利用者会話・反応を自社AIの学習へ使う工程を公表し、外部ベンダーも大規模学習を記録したが、当該IPデータが実際の学習データ又はモデル重みに入った直接証拠は、公開資料では確認できない。</p>
+</blockquote>
+<h2 id="section-3">2. ANYCOLOR／にじさんじ案件で確認できたこと</h2>
+<h3 id="subsection-2">2.1 Zeta自身が公表した範囲</h3>
+<p><a href="https://zeta-ai.io/ja/announcements/13366">Zetaの2026年10月12日告知</a>は、ANYCOLORから「にじさんじ」関連コンテンツの無断使用について報告を受け、ANYCOLORが権利を有するキャラクター名、画像、設定等を権利者の許可なく使ったプロットについて、全面的な削除要請を受けたと説明する。</p>
+<p>ここで正確な対象は、<strong>無断使用とされた対象プロット群</strong>である。「にじさんじに関連する全作品」「Zeta上の全プロット」又は「全二次創作」の削除と表現するのは範囲が広すぎる。</p>
+<p>基準日時点で、ANYCOLOR公式News・IRに本件の独立公表は確認できない。10月25日12時09分（JST）に、ANYCOLOR公式News最新50件、にじさんじ公式News最新100件、ANYCOLOR IR公開フィード全204件及び公式ドメイン対象検索を、<code>zeta</code>、<code>ゼタ</code>、<code>Scatter Lab</code>、<code>スキャッターラボ</code>、<code>無断使用</code>、<code>削除要請</code>等で確認したが、本件固有の発表は0件だった。したがって、公開資料上、要請内容を直接述べる当事者資料はZeta側告知である。これは、非公開の要請がなかったという意味ではない。</p>
+<h3 id="subsection-3">2.2 事件前から禁止ルールは存在した</h3>
+<p><a href="https://zeta-ai.io/ja/announcements/8119">Zetaの2026年1月23日付キャラクター作成ルール</a>は、利用者自身のオリジナルキャラクターに限定し、著名人、アイドル、VTuber、YouTuber、漫画、アニメ、ゲーム等の第三者キャラクターを禁止していた。</p>
+<p>したがって、公開証拠から言える問題は「禁止規則が全くなかった」ことではなく、<strong>規則があっても、申告対象となったプロット群を権利者申告前に完全排除できなかった</strong>ことである。検知機構がなかった、又は一件も自主削除しなかったとまでは確認できない。</p>
+<h3 id="subsection-4">2.3 プロフィールは404、別ルートと内部系統は未確認</h3>
+<p>複数の関連語による公開検索索引から便宜抽出した候補19件の<strong>プロフィールURL</strong>を2026年10月25日12時07分と12時33分（JST）に低頻度で確認したところ、19件ともHTTP 404だった。同じURL形式の別プロット1件はHTTP 200で、サイト全体が一律404だったわけではない。<a href="https://yutura.net/news/archives/167075">Yutura</a>も10月14日のサイト内「にじさんじ」検索が0件だったと報じる。19件のうち<strong>6件</strong>は、12時48～50分の敵対再検証で、第三者検索索引に残る過去スニペットと検索条件を記録できた。初回に8件と評価したうち2件は再現できず、公開認定から外した。残る13件は関連性の独立再現が未了である。索引は過去の公開状態を示し、現在の公開状態を示さない。</p>
+<p>敵対確認では、19件のうち1件について、プロフィールURLは404でもコメント用URLがHTTP 200を返した。さらに、<strong>存在しない固定UUID</strong>でもプロフィール=404、コメント=200となり、両コメント応答は本文・コメントを含まない汎用画面だった。このため、コメントの200を対象固有の削除漏れや内容残存の証拠から除外した。「全関連面から完全消去」とも認定できないが、それは内部・別ルートの全件検査をしていないためである。</p>
+<p>これにより、<strong>選定19件のプロフィールが現在閲覧不能であること</strong>は確認できる。ただし、便宜抽出標本であり、対象総数及び母集団が不明なため、全件完了率は算出できない。404は、物理削除、非公開化、ルーティング変更又はアクセス制御を外部から区別できず、次の消去も証明しない。URL全件、観測時刻、陽性対照及び存在しないIDの陰性対照は<a href="verification.html">公開URL検証表</a>に掲載した。</p>
+<ul>
+<li>生のプロット本文、設定、画像、会話ログ</li>
+<li>検索index、推薦特徴量、embedding、モデレーション記録</li>
+<li>分析基盤、data lake、cache、backup</li>
+<li>Tokenizer、CPT、SFT、DPO、GRPO、報酬モデル及び評価セット用データ</li>
+<li>旧checkpoint、学習済み重み</li>
+</ul>
+<h2 id="section-4">3. 何のAIを使っているか</h2>
+<p>中核はScatter Labが自社AIモデルと呼ぶ <strong>Spotwrite</strong> である。ただし、<a href="https://blog.scatterlab.co.kr/tokenizer-281373">公式トークナイザー技術記事</a>は、複数のオープンソースモデルを比較し、最も性能のよい基盤を選んで言語別に学習したと説明する。</p>
+<p>したがって、現時点の正確な説明は、<strong>名称非公開のオープンソース基盤を、継続事前学習、SFT及び選好最適化等で独自改良したモデル群</strong>である。完全にゼロから事前学習したスクラッチモデルと認定する根拠はない。</p>
+<p>公開資料で確認できる構成要素は次のとおりである。</p>
+<table>
+<thead>
+<tr>
+<th>構成要素</th>
+<th>確認できること</th>
+<th>未確認</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Spotwrite</td>
+<td>ストーリー対話LLM。CPT、SFT、DPO、GRPO等を自社運用</td>
+<td>基盤モデル名、パラメータ数、本番checkpoint、元の事前学習コーパス</td>
+</tr>
+<tr>
+<td>Koji</td>
+<td>長い会話から重要情報を整理・要約して保持する説明</td>
+<td>基盤モデル、Spotwriteとの版関係、要約保存先</td>
+</tr>
+<tr>
+<td>Luca</td>
+<td>設定、文脈及び複数キャラクター一貫性を改善した対話モデル</td>
+<td>基盤モデル、訓練データ、外部ベンダー</td>
+</tr>
+<tr>
+<td>PixAI v1.0の旧8スタイル</td>
+<td>旧8スタイルへの対応を2026年6月26日に終了すると公表</td>
+<td>現行の個別処理経路、基盤画像モデル、訓練データ</td>
+</tr>
+<tr>
+<td>名称非公開の8スタイルモデル</td>
+<td>旧8スタイルの代替として2026年6月26日以降に切替</td>
+<td>モデル名、提供者、Stable Diffusion系か、訓練データ</td>
+</tr>
+<tr>
+<td>外部AI</td>
+<td>OpenAI、Anthropic、Google、Microsoft、BytePlus、Elice、PixAI等を委託先として掲載</td>
+<td>個別機能とのrouting、各社による自社学習への再利用</td>
+</tr>
+</tbody></table>
+<p>第三者Hugging Face上の「Spotwrite-1」名義ファイルは、Scatter Labの公式配布物又は本番流出物と証明できないため、本番基盤モデルの認定根拠から除外した。</p>
+<h2 id="section-5">4. 何を学習しているか</h2>
+<h3 id="subsection-5">4.1 公式資料で確認できる学習工程</h3>
+<table>
+<thead>
+<tr>
+<th>工程</th>
+<th>公式資料から確認できる内容</th>
+<th>重要な未開示点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基盤選定</td>
+<td>複数のオープンソースモデルを比較し、一つを選定</td>
+<td>固有名、元ライセンス、元コーパス</td>
+</tr>
+<tr>
+<td>Tokenizer</td>
+<td>韓国語・日本語ごとに約20億文字。実サービス会話ログ約30%、サービス用prompt形式約5%、長文叙事テキスト、少量の英語</td>
+<td>ログ期間、個別由来、権利処理</td>
+</tr>
+<tr>
+<td>CPT</td>
+<td>新Tokenizerを移植し、全parameterで数百億token規模のcontinued pre-training</td>
+<td>CPT本文コーパスの完全な内訳</td>
+</tr>
+<tr>
+<td>SFT</td>
+<td>高品質対話データで学習し、日本利用者数万人規模でA/B</td>
+<td>全出典、ライセンス、IP除外条件</td>
+</tr>
+<tr>
+<td>DPO</td>
+<td>再生成前の回答をrejected、再生成後に採用された回答をchosenとして直接利用</td>
+<td>対象期間、件数、IP由来plotの除外規則</td>
+</tr>
+<tr>
+<td>報酬モデル／GRPO</td>
+<td>利用者信号から報酬モデルを作り、生成・採点・学習を反復して本番評価</td>
+<td>全label、除外規則、版別配布台帳</td>
+</tr>
+<tr>
+<td>本番A/B</td>
+<td>利用時間、再生成率、継続率等で評価し、日本全利用者へ展開</td>
+<td>全experiment protocol、同意画面の版</td>
+</tr>
+</tbody></table>
+<p>重要な注意は、<strong>「実会話ログ約30%」はTokenizer用コーパスの比率</strong>であり、CPT本文コーパスの30%が会話ログだと読み替えてはならない。</p>
+<p>根拠は、<a href="https://blog.scatterlab.co.kr/tokenizer-281373">Tokenizer／CPT／SFT記事</a>、<a href="https://blog.scatterlab.co.kr/%EC%9C%A0%EC%A0%80%EC%99%80-%ED%95%A8%EA%BB%98-%EB%A7%8C%EB%93%9C%EB%8A%94-llm-%EC%A0%9C%ED%83%80%EC%97%90-preference-optimization-%EB%8F%84%EC%9E%85%ED%95%98%EA%B8%B0-172134">DPO記事</a>、<a href="https://blog.scatterlab.co.kr/%EC%9C%A0%EC%A0%80%EC%99%80-%ED%95%A8%EA%BB%98-%EB%A7%8C%EB%93%9C%EB%8A%94-llm-2%ED%8E%B8-%EC%A0%9C%ED%83%80%EC%97%90-online-learning-%EB%8F%84%EC%9E%85%ED%95%98%EA%B8%B0-196476">GRPO記事</a>及び<a href="https://blog.scatterlab.co.kr/interview-mlresearch">ML研究者インタビュー</a>である。</p>
+<p><a href="https://zeta-ai.io/ko/policy/privacy">韓国向け現行プライバシーポリシー</a>も、メッセージ本文・メタデータと利用者の反応情報をAI会話アルゴリズム改善等へ使うと明記する。さらに、仮名化した会話、反応、サービス利用記録及び生成ツールへの入力・出力を、AI発話データ分析・機能高度化等のため最長5年処理すると説明する。これは韓国向け規程であり、日本利用者への契約適用とは分ける必要がある。また、ポリシー上の処理対象であることは、個々の記録が必ずモデル訓練に入ることを意味しない。</p>
+<h3 id="subsection-6">4.2 OpenAI等の位置付け</h3>
+<p><a href="https://speakerdeck.com/scatterlab/zeta-introduction">Scatter Lab公式講演資料</a>は、OpenAI GPTを学習データの整理・前処理に使うData Flywheelを説明する。</p>
+<p>これは、OpenAIがSpotwriteの基盤モデルであること、又はOpenAI自身がZetaデータを自社モデルの学習へ再利用したことの証拠ではない。委託先処理と、委託先自身の学習利用は区別しなければならない。zero-retention、no-training又はDPAの個別設定は公開されていない。</p>
+<h2 id="section-6">5. データをどこで処理・保存するか</h2>
+<p><a href="https://zeta-ai.io/ja/policy/privacy">日本語版プライバシーポリシー</a>は、会話のテキスト、画像、音声等の分析、対話algorithm改善、新規AI開発、仮名加工した利用記録の5年保持及び国外移転を記載する。</p>
+<p>同ポリシーは、日本の利用者の個人情報が<strong>韓国本社と韓国内の委託先へ移転される</strong>と明記する。2026年10月25日のDNSと<a href="https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html">AWS公開リージョン資料</a>の照合でも、公開API入口はソウルリージョンだった。ただし、これは一般的な個人情報の移転説明とネットワーク入口の観測であり、<strong>特定の日本IPプロット本文・画像が韓国、PixAI又はNebiusへ送信・保存・学習された直接証拠ではない</strong>。</p>
+<p>特に <strong>Nebius（フィンランド）</strong> は、「AIモデル学習過程で処理されるデータおよび関連ログ」を扱う訓練infrastructureとして明記される。</p>
+<p>主要な委託・基盤情報は次のとおりである。</p>
+<table>
+<thead>
+<tr>
+<th>事業者・基盤</th>
+<th>公開された役割又はデータ</th>
+<th>注意点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nebius（フィンランド）</td>
+<td>AIモデル学習過程のデータ、関連ログ</td>
+<td>学習対象の個別内容は非公開</td>
+</tr>
+<tr>
+<td>AWS</td>
+<td>cloud、保存、配信等</td>
+<td>公開API経路はSeoulが観測されたが、全DB所在地を証明しない</td>
+</tr>
+<tr>
+<td>Microsoft Azure</td>
+<td>AKS、Blob Storage、ACR等でSpotwrite推論・checkpoint配信</td>
+<td>公式記事は8超のregion展開を述べるが、全region名は非公開</td>
+</tr>
+<tr>
+<td>CoreWeave、RunPod、FriendliAI、Elice</td>
+<td>GPU／推論／訓練等</td>
+<td>個別dataset、保持期間、regionは限定的にしか公開されない</td>
+</tr>
+<tr>
+<td>OpenAI、Anthropic、Google、Microsoft、BytePlus、PixAI</td>
+<td>prompt、画像、生成結果、log等を処理し得る</td>
+<td>全requestが全社へ行く意味ではない。各社による再学習も未立証</td>
+</tr>
+<tr>
+<td>BytePlus系CDN</td>
+<td>画像等の配信</td>
+<td>Tokyo edgeの観測はorigin、database又は学習dataの所在地ではない</td>
+</tr>
+</tbody></table>
+<p>公開資料だけでは、本番DB、原会話、学習コーパス、backup及び旧checkpointの全物理所在地を確定できない。</p>
+<p><a href="https://zeta-ai.io/ja/policy/terms">Zeta利用規約第19条</a>は、公開プロットが会員退会後もサービスに必要な範囲で保持され得ると定める。<a href="https://zeta-ai.io/ja/policy/partner">パートナープログラム規約第10条</a>は、その参加対象コンテンツに限り、プロット削除・退会後も利用許諾が存続すると記す。これらは公開ページの404から内部保持の終了を推論できない根拠になる。ただし、ANYCOLOR対象プロットがパートナープログラムに参加した証拠も、対象データが現に内部保持又は学習利用されている証拠もない。利用者は、自ら保有しない第三者IPまでZetaへ許諾できない。</p>
+<p>PixAIとのデータ関係は地域文書で表現が異なる。日本向けポリシーはPixAIをAIサービス委託先とし、生成要求、画像、出力、IPアドレス及び端末情報を処理し得るとする。韓国向けポリシーは、同意に基づき画像生成用prompt、生成画像、IPアドレス及び端末情報を「AI画像生成サービス提供及び性能改善」のためPixAIへ提供すると記載する。一方、<a href="https://pixai.art/privacy">PixAI自身のプライバシーポリシー</a>は、明示的同意なしに利用者アップロード画像を基盤AIモデルの訓練・改善へ使わないと説明する。これらは一般的な連携条件であり、ANYCOLOR対象データがPixAIへ送信又は学習された証拠ではない。</p>
+<h2 id="section-7">6. 単発ではない権利者対応</h2>
+<p>ANYCOLOR案件だけを孤立した一件として扱うのは正確でない。韓国では複数の権利者から削除要請又は告訴が公表・報道されている。</p>
+<ul>
+<li>Zetaは2024年4月8日、著作権・肖像権等を侵害するコンテンツへの一般的措置を告知した。<a href="https://zeta-ai.io/ko/announcements/34">Zeta告知</a></li>
+<li>2024年9月13日のLezhin Entertainment及びKidari Studio関連告知は、権利者からの申告と警告を記すが、削除実施は記さない。2025年10月22日のDaewon Media関連告知は削除<strong>予定</strong>を記す。後者の対象表にはONE PIECE、ドラえもん、Studio Ghibli、Chiikawa等の日本IPも含まれる。権利者対応の告知がANYCOLOR案件以前からあったことは確認できるが、個々の削除完了は別途確認が必要である。<a href="https://zeta-ai.io/ko/announcements/266">Lezhin／Kidari告知</a>／<a href="https://zeta-ai.io/ko/announcements/5578">Daewon告知</a></li>
+<li>韓国ウェブトゥーン6社が2025年12月以降、Scatter Labを著作権侵害幇助容疑で順次告訴したと報じられた。Scatter Labはnotice-and-takedownを履行し、申告後1～3時間以内、1日平均900件超を措置すると反論している。</li>
+<li>Scatter Lab側説明を伝える2026年5月8日報道は、RIDIとKidari Studioの2件について警察が不送致としたとする。ただし、処分書及び事件番号は公開確認できず、これは無罪判決、民事上の適法性、残る4件又はANYCOLOR案件の結論ではない。</li>
+<li>3Y Corporation、SCON、NAVER Webtoon等についても、権利者要請を受けた削除予定又は削除進行中のZeta告知が存在する。これらを完了済みと読み替えることはできない。</li>
+</ul>
+<p>したがって、<strong>反復する権利者紛争及び大規模なnotice-and-takedown運用は確認できるが、個別案件の民事・刑事責任確定とは別である。</strong></p>
+<h3 id="subsection-7">6.1 にじさんじ以外の日本IPを直接再確認した</h3>
+<p><a href="https://zeta-ai.io/ko/announcements/5578">2025年10月のDaewon Media関連告知</a>は、削除<strong>予定</strong>の対象表に『ONE PIECE』『ドラえもん』『ちいかわ』のほか、『クレヨンしんちゃん』、スタジオジブリ、San-X、日本アニメーション等、計9分類を載せる。これはZeta側の告知であり、9分類の全作品が個別に掲載されていたことや、削除が完了したことの証拠ではない。Daewonは韓国の配給・ライセンス事業者であり、<a href="https://daewonmedia.com/en/business">同社の事業紹介</a>は各日本側権利者を別に記す。</p>
+<p>この対象表と公開検索索引を突き合わせ、2026年10月25日12時37～40分（JST）に便宜抽出した9件の公開プロフィールを無認証で確認した。<strong>9件中7件がHTTP 200、2件が404</strong>で、200の7件は『ONE PIECE』『ちいかわ』『ドラえもん』の3作品系統だった。次の3例では、作品名とキャラクター設定が現在のページ本文に表示された。いずれも2025年の告知後に公開されている。9件のIDと状態は<a href="verification.html">公開URL検証表</a>に掲載した。</p>
+<table>
+<thead>
+<tr>
+<th>作品名</th>
+<th>直接確認した公開ページ</th>
+<th>公開日・更新日</th>
+<th>10/25の状態</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ONE PIECE</td>
+<td><a href="https://zeta-ai.io/ko/plots/649b355e-34eb-488f-8051-484ef3650b2c/profile">韓国語Zetaの『원피스』</a></td>
+<td>2026-09-12／10-20</td>
+<td>HTTP 200、作品名・キャラクター設定を表示</td>
+</tr>
+<tr>
+<td>ちいかわ</td>
+<td><a href="https://zeta-ai.io/ko/plots/aa616ee5-2427-4690-be08-0ebcb115ab66/profile">韓国語Zetaの『치이카와』</a></td>
+<td>2026-10-05／10-08</td>
+<td>HTTP 200、作品名・キャラクター設定を表示</td>
+</tr>
+<tr>
+<td>ドラえもん</td>
+<td><a href="https://zeta-ai.io/ko/plots/dcde79c5-befb-478b-9c95-9a504587dcf3/profile">韓国語Zetaの劇場版プロット</a></td>
+<td>2026-10-01／10-15</td>
+<td>HTTP 200、作品名・キャラクター設定を表示</td>
+</tr>
+</tbody></table>
+<p>したがって、<strong>告知に挙がった日本IPの作品名を使う新しい公開プロットが、その約1年後にも存在する</strong>ことは直接確認できる。しかし、この7件がDaewonから個別に削除指定されたか、許諾がないか、法的に侵害するかは公開資料では決められない。韓国語ページの存在だけから、日本国内の素材を誰がどこから取得したか、本文や画像がどの国に保存されたか、AI学習に投入されたかも分からない。9件は便宜標本で、全体の掲載率や削除率ではない。</p>
+<h3 id="subsection-8">6.2 クリエイター作品と広告をめぐる確認結果</h3>
+<p>2026年1月6日、ある作家が自身の原画4点とZeta掲載画面の比較を公開し、続報で、運営から連絡があり「盗用が認められページが削除された」と説明した。<a href="https://x.com/i/status/2008479883333456255">作家本人の公開記録</a> 保存画像の視覚比較は、原画とZeta掲載画面の強い一致を示す。ここで確認できるのは、<strong>作家本人が無断転載を訴え、比較資料と削除連絡について説明したこと</strong>である。運営による判断の原文や個別の許諾関係は独立確認していない。Zeta運営自身がアップロードしたこと、広告へ利用したこと、裁判所が侵害を認定したことも示さない。</p>
+<p>Zeta公式は2026年6月5日、<code>#迷zeta</code> 投稿企画について受賞作1件を渋谷屋外広告へ掲載すると告知し、7月6日に受賞結果と「本当に、渋谷に載ります」と公表した。<a href="https://x.com/i/status/2062807754201547016">募集告知</a>／<a href="https://x.com/i/status/2074010531309187265">受賞発表</a> これにより、<strong>利用者投稿を公式に選び、屋外広告へ展開する企画構造</strong>は確認できる。ただし、実掲出のproof-of-playは未確認で、保存確認できた上位2作品には識別可能な既知IPは見つからなかった。</p>
+<p>複数報道及び当時の投稿から、特定IPを含む素材がZeta広告に使われたとの疑いは残る。しかし、広告原本、配信主体metadata及び権利者確認がそろっていないため、現時点では <strong>「Zeta自身による特定IPの無断広告利用」は未立証</strong>とする。</p>
+<h2 id="section-8">7. 過去のデータ保護上の記録</h2>
+<p>2021年、韓国個人情報保護委員会は、Scatter Labが別サービスから得た約60万人・約94億件のKakaoTalk会話をAIチャットボットIrudaの開発等へ利用したことなどについて、計1億330万ウォンの制裁金等を決定した。<a href="https://www.korea.kr/briefing/policyBriefingView.do?newsId=156449232">韓国政府の公式会見録</a></p>
+<p>これは旧Iruda案件であり、現行Zeta又はANYCOLOR案件の違法性を直接証明しない。ただし、同社の学習データ統制を評価する際の行政記録として関連性がある。</p>
+<h2 id="section-9">8. 日本のクリエイター・IP権利者にとっての法的意味</h2>
+<p>「AI学習なら著作権者の許諾が常に不要」という説明は正確でない。</p>
+<p>文化庁資料は、著作権法30条の4が、非享受目的の情報解析に適用され得る一方、元著作物の創作的表現を出力させる目的がある利用や、権利者の利益を不当に害する場合は同条で正当化されないと整理する。</p>
+<ul>
+<li>元著作物の創作的表現を出力させる目的の追加学習</li>
+<li>特定クリエイターの少数作品だけを使い、その表現を出す目的のLoRA等</li>
+<li>既存著作物の表現を出す目的のRAG用database</li>
+<li>AI学習用有償database市場と衝突する無許諾複製</li>
+</ul>
+<p>侵害物と知りながら利用した事実は、侵害出力が生じた場合の責任判断で不利な事情になり得るが、それだけで自動的に30条の4が使えなくなると断定はできない。文化庁資料は行政上の整理であり、個別案件を拘束する判決ではない。</p>
+<p>AI開発・学習段階と、生成・公開・販売段階は別に評価される。Zetaの一般的な品質改善目的の会話ログ学習が直ちに違法とは言えない一方、具体的な画像、文章又はキャラクター表現を使ったplotの作成・公開・生成利用は、類似性、依拠性、権利帰属、許諾及び利用態様を個別に検討する必要がある。</p>
+<p>なお、再学習、unlearning又は旧checkpoint廃棄の証拠を要求することは、影響範囲を監査するための要請である。日本法が学習済みモデルの廃棄を常に当然に命じる、と本稿が主張するものではない。</p>
+<p><a href="https://www.anycolor.co.jp/guidelines/">ANYCOLOR二次創作ガイドライン</a>は、対象を個人又は法人格を持たない団体とし、法人には個別問い合わせを求め、ファン活動を超える事業活動等を対象外とする。したがって、個人ファン向けの許容を、Scatter Labによる営利サービス、広告又は学習への包括許諾と扱うことはできない。</p>
+<p>参照すべき公的資料：</p>
+<ul>
+<li><a href="https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/pdf/94388701_01.pdf">文化庁「著作権テキスト」2026年版</a></li>
+<li><a href="https://www.bunka.go.jp/seisaku/chosakuken/pdf/94097701_01.pdf">文化庁「AIと著作権に関するチェックリスト＆ガイダンス」</a></li>
+<li><a href="https://laws.e-gov.go.jp/law/345AC0000000048">e-Gov法令検索「著作権法」</a></li>
+</ul>
+<h2 id="section-10">9. 現時点で断定してはいけないこと</h2>
+<ul>
+<li>「Zetaがにじさんじを学習した」と事実認定すること。</li>
+<li>「Spotwriteの基盤はOpenAI、Mistral、Arcee又はStable Diffusion」と固有名で断定すること。</li>
+<li>「全てのZeta会話が全ての外部委託先へ送られる」と述べること。</li>
+<li>「公開plotが404なので、学習データとmodelからも完全消去された」と述べること。</li>
+<li>「韓国警察がScatter Labの行為を全面的に適法と認定した」と述べること。</li>
+<li>「ANYCOLORが訴訟を起こした」「裁判所が侵害を認定した」と述べること。</li>
+<li>広告原本、配信主体metadata及び権利者確認が揃わないまま、特定IPをZeta自身が広告へ無断使用したと断定すること。</li>
+</ul>
+<h2 id="section-11">10. 権利者・政策担当者が要求すべき証拠</h2>
+<ol>
+<li>対象plotの全ID、content hash、作成・改訂・公開・非公開・削除時刻及び作成主体。</li>
+<li>対象ごとの画像、設定、会話log、生成物及び公式素材との照合表。</li>
+<li>閲覧、会話、課金、広告表示、推薦露出等の利用規模。</li>
+<li>本番DB、検索、推薦、分析、moderation、data lake、cache、backup別の所在、保持及び削除記録。</li>
+<li>Tokenizer、CPT、SFT、DPO、GRPO、報酬model、評価set別の対象ID／hash照合結果。</li>
+<li>dataset manifest、学習job ID、code commit、checkpoint台帳、model card、基盤license。</li>
+<li>OpenAI等の全委託先への送信有無、時刻、region、保持設定、DPA、zero-retention及びno-training設定。</li>
+<li>権利者通知後の収集停止、隔離、削除、再学習、unlearning、旧checkpoint廃棄の実行log及び第三者監査。</li>
+<li>ANYCOLORとの通知、回答、是正計画、完了報告及び個別許諾の有無。</li>
+<li>対象に関するlog、data、model、社内連絡の法務保全。</li>
+</ol>
+<h2 id="section-12">11. 敵対検証で残った7つの弱点</h2>
+<p>公開前に、中心結論へ最も強い反論を当てた。反論後も残る結論は次の範囲に限られる。</p>
+<table>
+<thead>
+<tr>
+<th>攻撃される主張</th>
+<th>最も強い反論</th>
+<th>反論後も残る結論</th>
+<th>決着に必要な証拠</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ANYCOLORが削除要請した</td>
+<td>本件を名指しするANYCOLOR側公表がなく、公開根拠はZeta側の自己申告</td>
+<td>「ZetaはANYCOLORから要請を受けたと公表した」までは確認済み</td>
+<td>要請書面、送信記録、ANYCOLOR側確認</td>
+</tr>
+<tr>
+<td>にじさんじ関連プロットが存在した</td>
+<td>現URLは404で、削除前ページを現在再閲覧できない。19件中13件の検索索引での関連性は再現未了</td>
+<td>Zeta告知に加え、検索条件を記録した6件の過去スニペットが関連文言を表示しており、該当種の公開存在を補強</td>
+<td>保存時刻付き完全ページ、対象全ID、権利素材・許諾との照合表</td>
+</tr>
+<tr>
+<td>Zetaが利用者データをAI学習へ使う</td>
+<td>技術記事と3地域のポリシーはすべて同社の説明で、独立監査ではない</td>
+<td>同社がTokenizer、DPO、GRPOを具体的に公表。外部のElice顧客事例は大規模学習設備を補強するが入力データは検証しない</td>
+<td>データセット台帳、コード、学習job、第三者監査</td>
+</tr>
+<tr>
+<td>対象データは削除された</td>
+<td>19プロフィールの404は便宜標本。コメント200は存在しないIDでも起きるため削除漏れを示さない</td>
+<td>選定19プロフィールが取得不能になったことだけ確認</td>
+<td>DB・検索・分析・backup・学習系統別の削除ログ</td>
+</tr>
+<tr>
+<td>PixAIも本件へ関与した</td>
+<td>委託・協業はあるが、対象データとの接続証拠がない</td>
+<td>PixAIは別運営の画像サービスで、一般的連携は確認。本件への直接関与は未確認</td>
+<td>対象IDの送信ログ、処理ログ、契約・削除記録</td>
+</tr>
+<tr>
+<td>告知後の日本IP公開ページは全て無許諾・削除義務違反だ</td>
+<td>Daewon告知に個別IDがなく、許諾の有無と権利関係も非公開</td>
+<td>対象表に載った3作品系統の新規公開ページ7件は10月25日に直接閲覧できた</td>
+<td>権利者の対象ID指定、各ページの許諾・権利処理記録、モデレーション履歴</td>
+</tr>
+<tr>
+<td>日本IPの本文・画像を国外へ持ち出しAI学習した</td>
+<td>日本利用者の個人情報移転と、特定IPデータの送信・学習は別の命題</td>
+<td>Zetaは日本利用者情報の韓国移転を明記。公開API入口もソウル。特定IPデータの移転・学習は未確認</td>
+<td>対象ID別の送信先・保存先ログ、学習データ台帳、委託先記録</td>
+</tr>
+</tbody></table>
+<p>この敵対検証の結果、中心結論は「一般的な学習流入経路は確認できるが、にじさんじ固有データの実投入は未確認」のまま変わらない。</p>
+<h2 id="section-13">12. 公開Webの低侵襲セキュリティ観測</h2>
+<p>認証回避や実データの取得を行わず、公開通信設定、HTTP header及び配信済みJavaScriptのみを確認した。「設定上の弱点」と「情報漏えい等の実害」を分ける必要がある。</p>
+<table>
+<thead>
+<tr>
+<th>観測項目</th>
+<th>判定</th>
+<th>確認できたこと</th>
+<th>未実証・限界</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>旧TLS</td>
+<td>確認済みの設定不備（APIは中、静的配信は低）</td>
+<td>API及び複数の配信hostがTLS 1.0/1.1を受理。APIでTLS 1.0/1.1と旧cipherの交渉を再現</td>
+<td>通信内容の窃取・改ざん証拠ではない。TLS 1.0/1.1は<a href="https://www.rfc-editor.org/rfc/rfc8996.html">RFC 8996</a>で廃止</td>
+</tr>
+<tr>
+<td>CORS</td>
+<td>設定欠陥、影響条件付き（低～中）</td>
+<td>Creator Assistantの既知read endpointが任意Originを反射し、credentialsを許可。任意Originのpreflightも通過</td>
+<td>無認証GETは401で、他人のdata取得は未実証。現行clientはBearer tokenを明示付与しており、流出を断定できない</td>
+</tr>
+<tr>
+<td>画面間message</td>
+<td>コード上の信頼境界不備（影響未実証）</td>
+<td>公開clientは受信messageのorigin/sourceを検証せずtoken更新messageを処理し、生成完了messageを<code>*</code>宛てで親画面へ送信。対象画面にframe-ancestors/X-Frame-Optionsなし</td>
+<td>実token取得、越権API又は第三者data流出は未実証。別origin埋め込み・第三者storage・利用者操作等に依存</td>
+</tr>
+<tr>
+<td>コメントURL</td>
+<td>汎用soft-404／SEO上の観測</td>
+<td>対象IDだけでなく存在しない固定UUIDでもprofile=404、comments=200。commentsは空の汎用画面でnoindexなし。古い検索スニペットも残る</td>
+<td>対象固有の削除漏れ・ライブのdata漏えいは示さない。索引残存の原因も未確定</td>
+</tr>
+</tbody></table>
+<p>したがって、<strong>システム全体の侵害又は利用者データ漏えいを示す「決定打」は現時点ではない</strong>。一方、旧TLS受理は再現済みの技術的欠陥であり、CORSと画面間messageは信頼境界の見直しを要する。推奨対策は、TLS 1.0/1.1の無効化、Origin allowlistとcredentialsの再設計、messageのorigin/source検証、送信先の固定、存在しないIDのコメントURLを404/410にすることとnoindex適用の検討である。</p>
+<h2 id="section-14">13. 調査方法と限界</h2>
+<p>対象は、公開web page、現行・保存版policy、Scatter Lab公式技術記事、Zeta公式告知、委託先事例、報道、公開web client、DNS、TLS及びHTTP headerである。削除観測では検索索引による便宜抽出、同形式の陽性対照、存在しないIDの陰性対照及び別ルート確認を用いた。19件のID・結果と関連性の再現状況は<a href="verification.html">公開URL検証表</a>に掲載した。証拠の種類は、会社公式技術資料、公式ポリシー、当事者発表、外部ベンダーの顧客事例、公的法人・商標記録、第三者索引、直接HTTP観測、補助報道、分析上の推定、公開資料の空白に分離した。</p>
+<p>認証回避、脆弱性悪用、非公開API探索、account作成、会話送信、大量取得又は利用者data取得は行っていない。公開clientのnetwork観測は2026年10月14日、公開削除状況と公式ページの存否は10月25日に再確認した。対象検索でANYCOLOR側の本件名指し公表、訴訟・仮処分・行政処分・和解・削除完了報告は確認できなかったが、不存在の証明ではない。</p>
+<p>本稿の「確認済み」は一次資料又は当事者公表で直接裏付けられること、「強い推定」は複数の確認済み事実から合理的に導けるが対象自体の直接証拠がないこと、「未確認」は公開資料から真偽を決められないことを意味する。</p>
+<h2 id="section-15">14. 最終評価</h2>
+<p>Zetaについて最も重大なのは、同社が無断使用対象プロットの存在と削除要請を公表し、別の技術資料で利用者のplot、会話及び反応をAI改善へ使う工程を説明する一方、<strong>両者をつなぐdata lineage、権利filter及び削除伝播の記録を公開していないこと</strong>である。加えて、2025年の対象表に載った日本IPの公開ページが2026年10月にも確認できる。Eliceの顧客事例は大規模学習の実施を補強するが、対象データの投入は確認できない。</p>
+<p>ただし、政策・権利者対応は、立証済みの事実と疑いを混同してはならない。次の決定点は、対象plot ID及びcontent hashを、各dataset、学習job、評価set及びcheckpointへ照合した結果をScatter Labに提出させられるかである。</p>
+<h2 id="section-16">15. 専門用語を普通の言葉にすると</h2>
+<table>
+<thead>
+<tr>
+<th>用語</th>
+<th>この報告での意味</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>プロット</td>
+<td>利用者が作るキャラクター・設定・物語のページ</td>
+</tr>
+<tr>
+<td>IP</td>
+<td>キャラクター、名称、画像、世界観等に関する権利</td>
+</tr>
+<tr>
+<td>LLM</td>
+<td>文章を作るAI</td>
+</tr>
+<tr>
+<td>トークナイザー</td>
+<td>文章をAIが扱える細かい単位に分ける辞書・規則</td>
+</tr>
+<tr>
+<td>CPT</td>
+<td>既存AIに大量の文章を追加で読ませる学習</td>
+</tr>
+<tr>
+<td>SFT</td>
+<td>良い回答例を使ってAIを調整する学習</td>
+</tr>
+<tr>
+<td>DPO</td>
+<td>利用者が選んだ回答と捨てた回答の違いから学ぶ方法</td>
+</tr>
+<tr>
+<td>GRPO／報酬モデル</td>
+<td>回答を採点し、高得点になるよう繰り返し改善する方法</td>
+</tr>
+<tr>
+<td>checkpoint</td>
+<td>ある時点で保存されたAIの版</td>
+</tr>
+<tr>
+<td>model weights</td>
+<td>AIが学習によって得た内部設定</td>
+</tr>
+<tr>
+<td>dataset manifest</td>
+<td>どのデータをどの学習へ使ったかを示す台帳</td>
+</tr>
+<tr>
+<td>data lineage</td>
+<td>データがどこから来て、どこへ使われたかの履歴</td>
+</tr>
+<tr>
+<td>HTTP 404</td>
+<td>ページを現在取得できない状態。内部データの完全消去を意味しない</td>
+</tr>
+<tr>
+<td>unlearning</td>
+<td>学習済みAIから特定データの影響を取り除く処理</td>
+</tr>
+</tbody></table>
+<p>解析担当: hqyabussqqqaaaaQqa@!1</p>
+</article><footer class="site-footer"><p>2026年10月25日時点の公開情報に基づく調査です。観測と推定、未確認事項を本文に明示しています。</p><nav aria-label="ページ末尾"><a aria-current="page" href="./">本文</a><a href="verification.html">公開URL検証表</a></nav></footer></main>
+</div>
+</body>
+</html>
